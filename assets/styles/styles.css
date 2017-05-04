@@ -7,68 +7,104 @@ html,
   background: #dad7f0;
 }
 
+header {
+  position: relative;
+  text-align: center;
+}
+
 .title {
-  padding-top: .3em;
+  display: block;
+  width: 250px;
+  margin: .2em auto;
+  font-family: 'Mandali', sans-serif;
   font-size: 45px;
   font-weight: bold;
-  opacity: 0.7
+  opacity: 0.7;
+}
+
+.sign-in-area {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 210px;
+}
+
+@media all and (max-width: 750px) {
+  .sign-in-area {
+    position: relative;
+    width: 250px;
+    margin: auto;
+  }
+}
+
+form {
+  font-family: 'Mandali', sans-serif;
+  float: right;
+  font-size: 14px;
+  margin: 15px;
+  padding: 6px 0;
+  height: 3em;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+input {
+  display: block;
+  border: none;
+  margin-top: 10px !important;
+  margin-right: 125px;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+input[type=submit],
+button {
+  background-color: #f3e5f9;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+button {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 10px 25px;
+}
+
+button:hover {
+  background-color: #dad7f0;
+}
+
+h1 {
+  font-size: 34px;
 }
 
 p {
   font-family: 'Mandali', sans-serif;
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
   opacity: 0.6;
 }
 
 img {
   display: block;
-  width: 40%;
+  width: 51%;
   margin: auto;
+}
+@media only screen and (max-width: 750px) {
+  img {
+    width: 90%;
+  }
 }
 
 @keyframes pulse_animation {
 	0% { transform: scale(1); }
-	50% { transform: scale(1.03); }
+	50% { transform: scale(1.04); }
 	100% { transform: scale(1); }
 }
 
 .pulse {
   animation: pulse_animation 3s ease-in-out infinite;
-}
-
-form {
-  font-family: 'Mandali', sans-serif;
-  font-size: 14px;
-  display: block;
-  /*margin: 15px;*/
-  padding-top: 6px;
-  padding-bottom: 6px;
-  height: 3em;
-}
-
-form.hidden {
-  display:none;
-}
-
-.topcorner_two {
-    position: absolute;
-    top: 10px;
-    right: 10px;
- }
-
- .topcorner {
-   position: absolute;
-   top: 10px;
-   right: 70px;
- }
-
-input[type=submit] {
-  background-color: #f3e5f9;
-  border: none;
-  padding: 7px;
-}
-
-input {
-  padding: 7px;
 }
