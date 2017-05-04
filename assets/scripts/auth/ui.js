@@ -16,10 +16,8 @@ const signInSuccess = (data) => {
   // store the user object:
   store.user = data.user
   console.log(data)
-  $('#sign-in').addClass('hidden')
-  $('#register').addClass('hidden')
-  $('#log-in').addClass('hidden')
-  $('#change-password').removeClass('hidden')
+  $('.sign-in-area').addClass('hidden')
+  $('#change-pwd').removeClass('hidden')
   $('#sign-out').removeClass('hidden')
   if ($('#sign-up').not('hidden')) {
     $('#sign-up').addClass('hidden')

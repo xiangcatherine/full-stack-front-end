@@ -8,7 +8,12 @@ const signInAppear = function () {
   $('#sign-in').removeClass('hidden')
 }
 
+const changePasswordAppear = function () {
+  $('#change-password').removeClass('hidden')
+}
+
 module.exports = {
   signUpAppear,
-  signInAppear
+  signInAppear,
+  changePasswordAppear
 }

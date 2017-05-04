@@ -21,8 +21,8 @@
     </div>
 
    <div class="sign-in-area">
-      <button id="register" class="topcorner">register</button>
-      <button id="log-in" class="topcorner_two">log in</button>
+      <button id="register">register</button>
+      <button id="log-in">log in</button>
 
       <form id="sign-up" class="hidden">
         <fieldset>
@@ -44,22 +44,27 @@
       <div class="signInErrorMessage"></div>
 
     </div>
+
+      <div class="sign-out-area">
+        <button id="change-pwd" class="hidden">change password</button>
+        <form id="change-password" class="hidden">
+          <fieldset>
+            <input type="password" name="passwords[old]" placeholder="old password">
+            <input type="password" name="passwords[new]" placeholder="new password">
+            <input type="submit" name="submit" value="change password">
+          </fieldset>
+        </form>
+
+        <form id="sign-out" class="hidden">
+          <fieldset>
+            <input type="submit" name="submit" value="sign out">
+          </fieldset>
+        </form>
+      </div>
+
   </header>
 
-  <img src="assets/images/baby.png" class="pulse" alt="baby"/>
+  <img src="http://res.cloudinary.com/xiangcatherine/image/upload/v1493922931/baby_d77ene.png" class="pulse" alt="baby"/>
 
-  <form id="change-password" class="hidden">
-    <fieldset>
-      <input type="password" name="passwords[old]" placeholder="old password">
-      <input type="password" name="passwords[new]" placeholder="new password">
-      <input type="submit" name="submit" value="change password">
-    </fieldset>
-  </form>
-
-  <form id="sign-out" class="hidden">
-    <fieldset>
-      <input type="submit" name="submit" value="sign out">
-    </fieldset>
-  </form>
 </body>
 </html>

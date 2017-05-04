@@ -17,6 +17,15 @@ $(() => {
   $('#log-in').on('click', function () {
     uxEvents.signInAppear()
   })
+
+  $('#change-pwd').on('click', function () {
+    uxEvents.changePasswordAppear()
+  })
+
+  $('#log-out').on('click', function () {
+    uxEvents.signUpAppear()
+    uxEvents.signInAppear()
+  })
 })
 
 // use require with a reference to bundle the file and use it in this file

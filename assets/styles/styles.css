@@ -17,7 +17,6 @@ header {
   width: 250px;
   margin: .2em auto;
   font-family: 'Mandali', sans-serif;
-  font-size: 45px;
   font-weight: bold;
   opacity: 0.7;
 }
@@ -37,6 +36,13 @@ header {
   }
 }
 
+.sign-out-area {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  width: 210px;
+}
+
 form {
   font-family: 'Mandali', sans-serif;
   float: right;
@@ -44,6 +50,10 @@ form {
   margin: 15px;
   padding: 6px 0;
   height: 3em;
+}
+
+#change-password {
+  margin-right: 100px;
 }
 
 .hidden {
@@ -77,8 +87,12 @@ button:hover {
   background-color: #dad7f0;
 }
 
+button:focus {
+  outline:0;
+}
+
 h1 {
-  font-size: 34px;
+  font-size: 70px;
 }
 
 p {
