@@ -19,14 +19,12 @@ const signInSuccess = (data) => {
   $('.sign-in-area').addClass('hidden')
   $('#change-pwd').removeClass('hidden')
   $('#sign-out').removeClass('hidden')
-  if ($('#sign-up').not('hidden')) {
-    $('#sign-up').addClass('hidden')
-  }
 }
 
 const signInFailure = (error) => {
   console.log(error)
   console.log('Either the username or password is wrong.')
+  $('#sign-in').addClass('hidden')
   $('.signInErrorMessage').text('Sorry, either the username or password was incorrect.')
 }
 
@@ -42,11 +40,28 @@ const changePasswordFailure = (error) => {
   console.log('Sorry, your password did not change.')
 }
 
+const signOutSuccess = () => {
+  console.log('You have signed out!')
+  store.user = null
+  $('#log-in').removeClass('hidden')
+  $('#register').removeClass('hidden')
+  $('#change-pwd').addClass('hidden')
+  $('#change-password').addClass('hidden')
+  $('#sign-out').addClass('hidden')
+}
+
+const signOutFailure = (error) => {
+  console.log(error)
+  console.log('Sorry, you were unable to sign out.')
+}
+
 module.exports = {
   signUpSuccess,
   signUpFailure,
   signInSuccess,
   signInFailure,
   changePasswordSuccess,
-  changePasswordFailure
+  changePasswordFailure,
+  signOutSuccess,
+  signOutFailure
 }

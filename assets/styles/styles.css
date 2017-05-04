@@ -95,7 +95,7 @@ h1 {
   font-size: 70px;
 }
 
-p {
+p, .signInErrorMessage {
   font-family: 'Mandali', sans-serif;
   text-align: center;
   font-size: 18px;
