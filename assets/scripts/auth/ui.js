@@ -30,9 +30,23 @@ const signInFailure = (error) => {
   $('.signInErrorMessage').text('Sorry, either the username or password was incorrect.')
 }
 
+const changePasswordSuccess = (data) => {
+  console.log(data)
+  console.log('You have changed your password!')
+  $('#change-password').addClass('hidden')
+  $('#change-pwd').addClass('hidden')
+}
+
+const changePasswordFailure = (error) => {
+  console.log(error)
+  console.log('Sorry, your password did not change.')
+}
+
 module.exports = {
   signUpSuccess,
   signUpFailure,
   signInSuccess,
-  signInFailure
+  signInFailure,
+  changePasswordSuccess,
+  changePasswordFailure
 }
