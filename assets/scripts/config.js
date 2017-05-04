@@ -2,8 +2,8 @@
 
 const config = {
   apiOrigins: {
-    production: 'https://expecting.herokuapp.com/',
-    development: 'http://localhost:4741/'
+    production: 'https://expecting.herokuapp.com',
+    development: 'http://localhost:4741'
   }
 }
 
