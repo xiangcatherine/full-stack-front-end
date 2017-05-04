@@ -2,10 +2,13 @@
 
 const setAPIOrigin = require('../../lib/set-api-origin')
 const config = require('./config')
+const authEvents = require('./auth/events.js')
 const uxEvents = require('./userexperience/main.js')
 
 $(() => {
   setAPIOrigin(location, config)
+
+  authEvents.addHandlers()
 
   $('#register').on('click', function () {
     uxEvents.signUpAppear()
