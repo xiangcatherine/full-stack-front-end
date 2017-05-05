@@ -4,6 +4,7 @@ const setAPIOrigin = require('../../lib/set-api-origin')
 const config = require('./config')
 const authEvents = require('./auth/events.js')
 const uxEvents = require('./userexperience/main.js')
+const babyEvents = require('./babyAPI/events.js')
 
 $(() => {
   setAPIOrigin(location, config)
@@ -25,6 +26,10 @@ $(() => {
   $('#log-out').on('click', function () {
     uxEvents.signUpAppear()
     uxEvents.signInAppear()
+  })
+
+  $('#input-age').on('submit', function () {
+    babyEvents.onCreateBaby(event)
   })
 })
 

@@ -19,6 +19,8 @@ const signInSuccess = (data) => {
   $('.sign-in-area').addClass('hidden')
   $('#change-pwd').removeClass('hidden')
   $('#sign-out').removeClass('hidden')
+  $('.home-img').hide()
+  $('.input-age-area').removeClass('hidden')
 }
 
 const signInFailure = (error) => {
