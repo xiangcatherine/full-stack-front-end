@@ -9,14 +9,7 @@ $(() => {
   setAPIOrigin(location, config)
 
   authEvents.addHandlers()
-
-  // def register all on click handlers
-  //   under neath in register all function, call the following:
-
-  // flow in index: top level actions
-  //   register handlers
-  //   call auth api
-  //   call baby api
+  babyEvents.addBabyHandlers()
 
   $('#input-age').on('submit', function () {
     babyEvents.onCreateBaby(event)

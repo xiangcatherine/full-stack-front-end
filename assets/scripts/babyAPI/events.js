@@ -19,11 +19,20 @@ const onCreateBaby = function (event) {
     .catch(babyUi.createBabyFailure)
 }
 
-// const addBabyHandlers = () => {
-//
-// }
+const onUpdateBaby = function (event) {
+  event.preventDefault()
+  babyApi.updateBaby()
+    .then(babyUi.updateBabySuccess)
+    .catch(babyUi.updateBabyFailure)
+}
+
+const addBabyHandlers = () => {
+  $('.baby-stat').on('click', onUpdateBaby)
+}
 
 module.exports = {
   onGetBaby,
-  onCreateBaby
+  onCreateBaby,
+  onUpdateBaby,
+  addBabyHandlers
 }

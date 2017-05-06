@@ -26,16 +26,15 @@ const createBaby = (data) => {
   })
 }
 
-// const updateBaby = (data) => {
-//   return $.ajax({
-//     url: config.apiOrigin + '/babies/' + data.item.id,
-//     method: 'PATCH',
-//     headers: {
-//       'Authorization': 'Token token=' + store.user.token
-//     },
-//     data: data
-//   })
-// }
+const updateBaby = () => {
+  return $.ajax({
+    url: config.apiOrigin + '/babies/' + store.babyId,
+    method: 'PATCH',
+    headers: {
+      'Authorization': 'Token token=' + store.user.token
+    }
+  })
+}
 
 module.exports = {
   getBaby,
