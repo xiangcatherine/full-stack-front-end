@@ -1,6 +1,7 @@
 'use strict'
 
 const getFormFields = require(`../../../lib/get-form-fields`)
+const uxEvents = require('../userexperience/main.js')
 
 const api = require('./api')
 const ui = require('./ui')
@@ -42,6 +43,19 @@ const addHandlers = () => {
   $('#sign-in').on('submit', onSignin)
   $('#change-password').on('submit', onChangePassword)
   $('.sign-out-button').on('click', onSignOut)
+  $('#register').on('click', function () {
+    uxEvents.signUpAppear()
+  })
+  $('#log-in').on('click', function () {
+    uxEvents.signInAppear()
+  })
+  $('#change-pwd').on('click', function () {
+    uxEvents.changePasswordAppear()
+  })
+  $('#log-out').on('click', function () {
+    uxEvents.signUpAppear()
+    uxEvents.signInAppear()
+  })
 }
 
 module.exports = {

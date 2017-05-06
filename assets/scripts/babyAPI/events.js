@@ -4,6 +4,13 @@ const getFormFields = require(`../../../lib/get-form-fields`)
 const babyApi = require('./api.js')
 const babyUi = require('./ui.js')
 
+const onGetBaby = function (event) {
+  // event.preventDefault()
+  babyApi.getBaby()
+    .then(babyUi.getBabySuccess)
+    .catch(babyUi.getBabyFailure)
+}
+
 const onCreateBaby = function (event) {
   event.preventDefault()
   const data = getFormFields(event.currentTarget)
@@ -12,6 +19,11 @@ const onCreateBaby = function (event) {
     .catch(babyUi.createBabyFailure)
 }
 
+// const addBabyHandlers = () => {
+//
+// }
+
 module.exports = {
+  onGetBaby,
   onCreateBaby
 }

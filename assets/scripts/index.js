@@ -3,7 +3,6 @@
 const setAPIOrigin = require('../../lib/set-api-origin')
 const config = require('./config')
 const authEvents = require('./auth/events.js')
-const uxEvents = require('./userexperience/main.js')
 const babyEvents = require('./babyAPI/events.js')
 
 $(() => {
@@ -11,22 +10,13 @@ $(() => {
 
   authEvents.addHandlers()
 
-  $('#register').on('click', function () {
-    uxEvents.signUpAppear()
-  })
+  // def register all on click handlers
+  //   under neath in register all function, call the following:
 
-  $('#log-in').on('click', function () {
-    uxEvents.signInAppear()
-  })
-
-  $('#change-pwd').on('click', function () {
-    uxEvents.changePasswordAppear()
-  })
-
-  $('#log-out').on('click', function () {
-    uxEvents.signUpAppear()
-    uxEvents.signInAppear()
-  })
+  // flow in index: top level actions
+  //   register handlers
+  //   call auth api
+  //   call baby api
 
   $('#input-age').on('submit', function () {
     babyEvents.onCreateBaby(event)

@@ -50,12 +50,20 @@ header {
   }
 }
 
-.input-age-area {
+.input-age-area,
+.view-baby-stat {
   margin: auto;
   width: 600px;
   text-align: center;
   padding-top: 100px;
+}
+
+.input-age-area {
   font-size: 35px;
+}
+
+.view-baby-stat {
+  font-size: 25px;
 }
 
 .age-box {

@@ -1,6 +1,7 @@
 'use strict'
 
 const store = require('../store.js')
+const babyEvents = require('../babyAPI/events.js')
 
 const signUpSuccess = (data) => {
   console.log(data)
@@ -21,7 +22,7 @@ const signInSuccess = (data) => {
   $('.sign-in-area').addClass('hidden')
   $('#change-pwd').removeClass('hidden')
   $('#sign-out').removeClass('hidden')
-  $('.input-age-area').removeClass('hidden')
+  babyEvents.onGetBaby(event)
 }
 
 const signInFailure = (error) => {
