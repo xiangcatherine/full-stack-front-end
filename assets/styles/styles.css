@@ -21,32 +21,50 @@ header {
   opacity: 0.7;
 }
 
-.sign-in-area {
+.sign-in-area,
+.sign-out-area {
   position: absolute;
-  top: 0;
+  float: right;
+  font-size: 14px;
+  top: 10px;
   right: 0;
+}
+
+.sign-in-area {
   width: 210px;
+  right: 0;
+}
+
+.sign-out-area {
+  width: 500px;
+  text-align: right;
+  padding-right: 10px;
 }
 
 @media all and (max-width: 750px) {
-  .sign-in-area {
+  .sign-in-area,
+  .sign-out-area {
     position: relative;
     width: 250px;
     margin: auto;
   }
 }
 
-.sign-out-area {
-  position: absolute;
-  bottom: -30px;
-  right: 0;
-  width: 210px;
+.input-age-area {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 35px;
+}
+
+.age-box {
+  margin: 15px;
+  opacity: 0.5;
 }
 
 form {
   font-family: 'Mandali', sans-serif;
-  float: right;
-  font-size: 14px;
   margin: 15px;
   padding: 6px 0;
   height: 3em;
@@ -67,10 +85,10 @@ input {
   margin-right: 125px;
   padding: 7px;
   border-radius: 5px;
+  outline: none;
 }
 
-input[type=submit],
-button {
+input[type=submit] {
   background-color: #f3e5f9;
   border: none;
   padding: 7px;
@@ -78,9 +96,13 @@ button {
 }
 
 button {
+  background-color: #f3e5f9;
   -webkit-transition-duration: 0.4s;
+  border: none;
+  border-radius: 5px;
   transition-duration: 0.4s;
   padding: 10px 25px;
+  border-top: 50px;
 }
 
 button:hover {
@@ -98,14 +120,22 @@ h1 {
 p, .signInErrorMessage {
   font-family: 'Mandali', sans-serif;
   text-align: center;
-  font-size: 18px;
   opacity: 0.6;
+}
+
+p {
+  font-size: 18px;
+}
+
+.signInErrorMessage {
+  font-size: 14px;
 }
 
 img {
   display: block;
   width: 51%;
   margin: auto;
+  height: auto;
 }
 @media only screen and (max-width: 750px) {
   img {

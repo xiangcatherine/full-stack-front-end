@@ -16,10 +16,11 @@ const signInSuccess = (data) => {
   // store the user object:
   store.user = data.user
   console.log(data)
+  $('.home-img').hide()
+  $('.tagline').addClass('hidden')
   $('.sign-in-area').addClass('hidden')
   $('#change-pwd').removeClass('hidden')
   $('#sign-out').removeClass('hidden')
-  $('.home-img').hide()
   $('.input-age-area').removeClass('hidden')
 }
 
@@ -45,11 +46,17 @@ const changePasswordFailure = (error) => {
 const signOutSuccess = () => {
   console.log('You have signed out!')
   store.user = null
+  $('.home-img').show()
+  $('.tagline').removeClass('hidden')
+  $('.sign-in-area').removeClass('hidden')
   $('#log-in').removeClass('hidden')
   $('#register').removeClass('hidden')
   $('#change-pwd').addClass('hidden')
   $('#change-password').addClass('hidden')
   $('#sign-out').addClass('hidden')
+  if ($('#sign-in').not('hidden')) {
+    $('#sign-in').addClass('hidden')
+  }
 }
 
 const signOutFailure = (error) => {
