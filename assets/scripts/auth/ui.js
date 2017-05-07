@@ -29,6 +29,7 @@ const signInFailure = (error) => {
   console.log(error)
   console.log('Either the username or password is wrong.')
   $('#sign-in').addClass('hidden')
+  $('.signInErrorMessage').removeClass('hidden')
   $('.signInErrorMessage').text('Sorry, either the username or password was incorrect.')
 }
 

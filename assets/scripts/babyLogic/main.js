@@ -12,55 +12,58 @@ const getBabySizeText = function (response) {
 
   switch (age) {
     case 4:
-      updateText = 'Baby is as big as a poppyseed!'
+      updateText = 'Week 4: Baby is as big as a poppyseed!'
       break
     case 5:
-      updateText = 'Baby is as big as a sesame seed!'
+      updateText = 'Week 5: Baby is as big as a sesame seed!'
       break
     case 6:
-      updateText = "Baby is as big as a hershey's kiss!"
+      updateText = "Week 6: Baby is as big as a hershey's kiss!"
       break
     case 7:
-      updateText = 'Baby is as big as a blueberry!'
+      updateText = 'Week 7: Baby is as big as a blueberry!'
       break
     case 8:
-      updateText = 'Baby is as big as a raspberry!'
+      updateText = 'Week 8: Baby is as big as a raspberry!'
       break
     case 9:
-      updateText = 'Baby is as big as a sushi roll!'
+      updateText = 'Week 9: Baby is as big as a sushi roll!'
       break
     case 10:
-      updateText = 'Baby is as big as a petit four!'
+      updateText = 'Week 10: Baby is as big as a petit four!'
       break
     case 11:
-      updateText = 'Baby is as big as a ping pong ball!'
+      updateText = 'Week 11: Baby is as big as a ping pong ball!'
       break
     case 12:
-      updateText = 'Baby is as big as a small macaron!'
+      updateText = 'Week 12: Baby is as big as a small macaron!'
       break
     case 13:
-      updateText = 'Baby is as big as a lemon!'
+      updateText = 'Week 13: Baby is as big as a lemon!'
       break
     case 14:
-      updateText = 'Baby is as big as a mini cactus!'
+      updateText = 'Week 14: Baby is as big as a mini cactus!'
       break
     case 15:
-      updateText = 'Baby is as big as an eclair!'
+      updateText = 'Week 15: Baby is as big as an eclair!'
       break
     case 16:
-      updateText = 'Baby is as big as an avocado!'
+      updateText = 'Week 16: Baby is as big as an avocado!'
       break
     case 17:
-      updateText = 'Baby is as big as a pomegranate!'
+      updateText = 'Week 17: Baby is as big as a pomegranate!'
       break
     case 18:
-      updateText = 'Baby is as big as a croissant!'
+      updateText = 'Week 18: Baby is as big as a croissant!'
       break
     case 19:
-      updateText = 'Baby is as big as a palmier cookie!'
+      updateText = 'Week 19: Baby is as big as a palmier cookie!'
       break
     case 20:
-      updateText = 'Baby is as big as a raspberry!'
+      updateText = 'Week 20: Baby is as big as a raspberry!'
+      break
+    case 40:
+      updateText = 'Week 40: Baby is as big as a watermelon!'
       break
   }
 

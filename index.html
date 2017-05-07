@@ -30,7 +30,7 @@
           <input type="text" name="credentials[email]" placeholder="email">
           <input type="password" name="credentials[password]" placeholder="password">
           <input type="password" name="credentials[password_confirmation]" placeholder="confirm password">
-          <button type="submit" name="submit" value="sign up">sign up</button>
+          <button class="reset" type="submit" name="submit" value="sign up">sign up</button>
         </fieldset>
       </form>
 
@@ -38,11 +38,11 @@
         <fieldset>
           <input type="text" name="credentials[email]" placeholder="email">
           <input type="password" name="credentials[password]" placeholder="password">
-          <button type="submit" name="submit" value="sign in">sign in</button>
+          <button class="reset" type="submit" name="submit" value="sign in">sign in</button>
         </fieldset>
       </form>
 
-    <div class="signInErrorMessage"></div>
+    <div class="signInErrorMessage hidden"></div>
   </div>
 
   <div class="sign-out-area">
@@ -53,7 +53,7 @@
       <fieldset>
         <input type="password" name="passwords[old]" placeholder="old password">
         <input type="password" name="passwords[new]" placeholder="new password">
-        <button type="submit" name="submit" value="change password">change password</button>
+        <button class="reset" type="submit" name="submit" value="change password">change password</button>
       </fieldset>
     </form>
   </div>
