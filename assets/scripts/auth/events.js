@@ -45,9 +45,15 @@ const addHandlers = () => {
   $('.sign-out-button').on('click', onSignOut)
   $('#register').on('click', function () {
     uxEvents.signUpAppear()
+    if ($('#sign-in').not('hidden')) {
+      $('#sign-in').addClass('hidden')
+    }
   })
   $('#log-in').on('click', function () {
     uxEvents.signInAppear()
+    if ($('#sign-up').not('hidden')) {
+      $('#sign-up').addClass('hidden')
+    }
   })
   $('#change-pwd').on('click', function () {
     uxEvents.changePasswordAppear()

@@ -1,9 +1,13 @@
 'use strict'
 
 const store = require('../store.js')
+const babyDisplay = require('../babyLogic/main.js')
 
 const createBabySuccess = (response) => {
   console.log('Yay! We have a baby!')
+  $('.input-age-area').addClass('hidden')
+  babyDisplay.getImgBasedOnAge(response)
+  babyDisplay.getBabySizeText(response)
 }
 
 const createBabyFailure = (error) => {
@@ -29,6 +33,9 @@ const getBabyFailure = (error) => {
 const updateBabySuccess = (response) => {
   console.log(response)
   console.log('Updated baby successfully!')
+  $('.view-baby-stat').addClass('hidden')
+  babyDisplay.getImgBasedOnAge(response)
+  babyDisplay.getBabySizeText(response)
 }
 
 const updateBabyFailure = (error) => {
