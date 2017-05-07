@@ -22,6 +22,7 @@ const signInSuccess = (data) => {
   $('.sign-in-area').addClass('hidden')
   $('#change-pwd').removeClass('hidden')
   $('#sign-out').removeClass('hidden')
+  $('.remove-baby').removeClass('hidden')
   babyEvents.onGetBaby(event)
 }
 
@@ -56,6 +57,8 @@ const signOutSuccess = () => {
   $('#change-pwd').addClass('hidden')
   $('#change-password').addClass('hidden')
   $('#sign-out').addClass('hidden')
+  $('.remove-baby').addClass('hidden')
+  $('.baby-size-display').css('display', 'none')
   if ($('#sign-in').not('hidden')) {
     $('#sign-in').addClass('hidden')
   }

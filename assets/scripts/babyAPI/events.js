@@ -26,13 +26,22 @@ const onUpdateBaby = function (event) {
     .catch(babyUi.updateBabyFailure)
 }
 
+const onDeleteBaby = function (event) {
+  event.preventDefault()
+  babyApi.deleteBaby()
+    .then(babyUi.deleteBabySuccess)
+    .catch(babyUi.deleteBabyFailure)
+}
+
 const addBabyHandlers = () => {
   $('.baby-stat').on('click', onUpdateBaby)
+  $('.remove-baby').on('click', onDeleteBaby)
 }
 
 module.exports = {
   onGetBaby,
   onCreateBaby,
   onUpdateBaby,
-  addBabyHandlers
+  addBabyHandlers,
+  onDeleteBaby
 }

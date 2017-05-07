@@ -86,6 +86,14 @@ form {
   visibility: hidden;
 }
 
+.remove-baby {
+  position: absolute;
+  float: right;
+  font-size: 14px;
+  top: 10px;
+  left: 0;
+}
+
 input {
   display: block;
   border: none;

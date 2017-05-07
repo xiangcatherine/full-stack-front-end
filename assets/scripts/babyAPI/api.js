@@ -36,8 +36,20 @@ const updateBaby = () => {
   })
 }
 
+const deleteBaby = (data) => {
+  return $.ajax({
+    url: config.apiOrigin + '/babies/' + store.babyId,
+    method: 'DELETE',
+    headers: {
+      'Authorization': 'Token token=' + store.user.token
+    },
+    data: data
+  })
+}
+
 module.exports = {
   getBaby,
   createBaby,
-  updateBaby
+  updateBaby,
+  deleteBaby
 }

@@ -43,11 +43,25 @@ const updateBabyFailure = (error) => {
   console.log('Failed to update baby')
 }
 
+const deleteBabySuccess = () => {
+  console.log('removed baby!')
+  $('.baby-size-img').css('display', 'none')
+  $('view-baby-stat').addClass('hidden')
+  $('.input-age-area').removeClass('hidden')
+}
+
+const deleteBabyFailure = (error) => {
+  console.log('Could not remove baby.')
+  console.error(error)
+}
+
 module.exports = {
   getBabySuccess,
   getBabyFailure,
   createBabySuccess,
   createBabyFailure,
   updateBabySuccess,
-  updateBabyFailure
+  updateBabyFailure,
+  deleteBabySuccess,
+  deleteBabyFailure
 }
