@@ -50,6 +50,9 @@ const updateBabySuccess = (response) => {
   if (!$('#change-password').hasClass('hidden')) {
     $('#change-password').addClass('hidden')
   }
+  if (!$('.change-pwd-success').hasClass('hidden')) {
+    $('.change-pwd-success').addClass('hidden')
+  }
   babyDisplay.getImgBasedOnAge(response)
   babyDisplay.getBabySizeText(response)
 }
@@ -65,6 +68,12 @@ const deleteBabySuccess = () => {
   $('view-baby-stat').addClass('hidden')
   $('.input-age-area').removeClass('hidden')
   $('.baby-size-text').text('')
+  if (!$('#change-password').hasClass('hidden')) {
+    $('#change-password').addClass('hidden')
+  }
+  if (!$('.change-pwd-success').hasClass('hidden')) {
+    $('.change-pwd-success').addClass('hidden')
+  }
 }
 
 const deleteBabyFailure = (error) => {

@@ -45,12 +45,14 @@ const changePasswordSuccess = (data) => {
   console.log(data)
   console.log('You have changed your password!')
   $('#change-password').addClass('hidden')
+  $('.change-pwd-success').removeClass('hidden').text('Password changed successfully.')
   document.getElementById('change-password').reset()
 }
 
 const changePasswordFailure = (error) => {
   console.log(error)
   console.log('Sorry, your password did not change.')
+  $('#change-password').addClass('hidden')
   $('.change-pwd-error').removeClass('hidden').text('Sorry, try again.')
   document.getElementById('change-password').reset()
 }
@@ -73,6 +75,12 @@ const signOutSuccess = () => {
   document.getElementById('input-age').reset()
   if ($('#sign-in').not('hidden')) {
     $('#sign-in').addClass('hidden')
+  }
+  if (!$('.change-pwd-success').hasClass('hidden')) {
+    $('.change-pwd-success').addClass('hidden')
+  }
+  if (!$('.change-pwd-error').hasClass('hidden')) {
+    $('.change-pwd-error').addClass('hidden')
   }
 }
 

@@ -150,7 +150,9 @@ p {
   padding-top: 15px;
 }
 
-.signInErrorMessage {
+.signInErrorMessage,
+.change-pwd-error,
+.change-pwd-success {
   font-size: 14px;
   padding-top: 10px;
   padding-right: 10px;
