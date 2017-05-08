@@ -67,9 +67,10 @@ const signOutSuccess = () => {
   $('#change-password').addClass('hidden')
   $('#sign-out').addClass('hidden')
   $('.remove-baby').addClass('hidden')
-  $('.baby-size-display').css('display', 'none')
+  $('.baby-size-display').addClass('hidden')
   $('.view-baby-stat').addClass('hidden')
   $('.baby-size-text').text('')
+  document.getElementById('input-age').reset()
   if ($('#sign-in').not('hidden')) {
     $('#sign-in').addClass('hidden')
   }

@@ -6,6 +6,13 @@ const babyDisplay = require('../babyLogic/main.js')
 const createBabySuccess = (response) => {
   console.log('Yay! We have a baby!')
   $('.input-age-area').addClass('hidden')
+  if ($('.baby-size-display').hasClass('hidden')) {
+    $('.baby-size-display').removeClass('hidden')
+  }
+  if ($('.baby-size-text').hasClass('hidden')) {
+    $('.baby-size-text').removeClass('hidden')
+  }
+  document.getElementById('input-age').reset()
   babyDisplay.getImgBasedOnAge(response)
   babyDisplay.getBabySizeText(response)
 }
@@ -34,8 +41,8 @@ const updateBabySuccess = (response) => {
   console.log(response)
   console.log('Updated baby successfully!')
   $('.view-baby-stat').addClass('hidden')
-  if ($('.baby-size-display').css('display', 'none')) {
-    $('.baby-size-display').css('display', 'block')
+  if ($('.baby-size-display').hasClass('hidden')) {
+    $('.baby-size-display').removeClass('hidden')
   }
   if ($('.baby-size-text').hasClass('hidden')) {
     $('.baby-size-text').removeClass('hidden')
