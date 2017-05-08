@@ -26,7 +26,7 @@ header {
   position: absolute;
   float: right;
   font-size: 14px;
-  top: 10px;
+  top: 25px;
   right: 0;
 }
 
@@ -90,7 +90,7 @@ form {
   position: absolute;
   float: right;
   font-size: 14px;
-  top: 10px;
+  top: 25px;
   left: 0;
 }
 
