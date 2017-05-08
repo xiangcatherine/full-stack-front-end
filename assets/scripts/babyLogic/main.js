@@ -131,15 +131,6 @@ const updateBabySizeText = function (message) {
   $('.baby-size-text').text(message)
 }
 
-// ["I'm only", age, "years old"].join(" ");
-
-// "assets/images/week4.png"
-// document.getElementById("imageid").src="../template/save.png";
-
-// var d = new Date().getDay()
-// var dayImg = document.getElementById('dayImg'+d);
-// dayImg.style.visibility = "visible";
-
 module.exports = {
   getImgBasedOnAge,
   getBabySizeText,

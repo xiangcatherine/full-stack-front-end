@@ -51,6 +51,7 @@ const deleteBabySuccess = () => {
   $('.baby-size-img').css('display', 'none')
   $('view-baby-stat').addClass('hidden')
   $('.input-age-area').removeClass('hidden')
+  $('.baby-size-text').text('')
 }
 
 const deleteBabyFailure = (error) => {
