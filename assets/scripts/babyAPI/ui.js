@@ -37,6 +37,12 @@ const updateBabySuccess = (response) => {
   if ($('.baby-size-display').css('display', 'none')) {
     $('.baby-size-display').css('display', 'block')
   }
+  if ($('.baby-size-text').hasClass('hidden')) {
+    $('.baby-size-text').removeClass('hidden')
+  }
+  if (!$('#change-password').hasClass('hidden')) {
+    $('#change-password').addClass('hidden')
+  }
   babyDisplay.getImgBasedOnAge(response)
   babyDisplay.getBabySizeText(response)
 }
