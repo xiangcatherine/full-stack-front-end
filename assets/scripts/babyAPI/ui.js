@@ -34,6 +34,9 @@ const updateBabySuccess = (response) => {
   console.log(response)
   console.log('Updated baby successfully!')
   $('.view-baby-stat').addClass('hidden')
+  if ($('.baby-size-display').css('display', 'none')) {
+    $('.baby-size-display').css('display', 'block')
+  }
   babyDisplay.getImgBasedOnAge(response)
   babyDisplay.getBabySizeText(response)
 }
