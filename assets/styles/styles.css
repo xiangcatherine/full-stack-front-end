@@ -78,12 +78,8 @@ form {
   height: 3em;
 }
 
-#change-password {
-  margin-right: 100px;
-}
-
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .remove-baby {
@@ -92,6 +88,11 @@ form {
   font-size: 14px;
   top: 25px;
   left: 0;
+}
+
+.pwd {
+  float: right;
+  right: 0;
 }
 
 input {
@@ -148,10 +149,13 @@ p {
 .baby-size-text {
   font-size: 18px;
   padding-bottom: 40px;
+  padding-top: 15px;
 }
 
 .signInErrorMessage {
   font-size: 14px;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .home-img {

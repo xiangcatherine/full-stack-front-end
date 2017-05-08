@@ -7,6 +7,7 @@ const signUpSuccess = (data) => {
   console.log(data)
   $('#sign-up').addClass('hidden')
   $('#register').addClass('hidden')
+  document.getElementById('sign-up').reset()
 }
 
 const signUpFailure = (error) => {
@@ -23,6 +24,7 @@ const signInSuccess = (data) => {
   $('#change-pwd').removeClass('hidden')
   $('#sign-out').removeClass('hidden')
   $('.remove-baby').removeClass('hidden')
+  document.getElementById('sign-in').reset()
   babyEvents.onGetBaby(event)
 }
 
@@ -39,6 +41,7 @@ const changePasswordSuccess = (data) => {
   console.log('You have changed your password!')
   $('#change-password').addClass('hidden')
   $('#change-pwd').addClass('hidden')
+  document.getElementById('change-password').reset()
 }
 
 const changePasswordFailure = (error) => {
