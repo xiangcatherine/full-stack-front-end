@@ -4,8 +4,8 @@ const getImgBasedOnAge = (response) => {
   const week = response['baby']['age']
   $('.baby-size-img').css('display', 'block')
   // const weekImg = document.getElementById('weekImg' + week)
-  // weekImg.style.display = 'block'
-  const imgSource = ("assets/images/week" + week + ".PNG")
+  // const imgSource = ("/assets/images/week" + week + ".png")
+  const imgSource = ("https://raw.githubusercontent.com/xiangcatherine/full-stack-front-end/master/assets/images/week" + week + ".png")
   $('.baby-size-img').attr('src', imgSource)
 }
 
