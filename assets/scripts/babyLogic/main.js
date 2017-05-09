@@ -1,14 +1,21 @@
 'use strict'
 
+// Gets image URL based on baby's age
 const getImgBasedOnAge = (response) => {
   const week = response['baby']['age']
   $('.baby-size-img').css('display', 'block')
+<<<<<<< HEAD
   // const weekImg = document.getElementById('weekImg' + week)
   // const imgSource = ("/assets/images/week" + week + ".png")
   const imgSource = ("https://raw.githubusercontent.com/xiangcatherine/full-stack-front-end/master/assets/images/week" + week + ".png")
+=======
+  // weekImg.style.display = 'block'
+  const imgSource = ("assets/images/week" + week + ".PNG")
+>>>>>>> UX
   $('.baby-size-img').attr('src', imgSource)
 }
 
+// Gets the corresponding text message
 const getBabySizeText = function (response) {
   const age = response['baby']['age']
   let updateText = ''
