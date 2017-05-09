@@ -93,7 +93,7 @@ const getBabySizeText = function (response) {
       updateText = 'week 29: baby is as big as a pineapple!'
       break
     case 30:
-      updateText = 'week 30: baby is as big as a zucchini!'
+      updateText = 'week 30: baby is as big as a small platypus!'
       break
     case 31:
       updateText = 'week 31: baby is as big as a large movie popcorn!'
@@ -114,16 +114,16 @@ const getBabySizeText = function (response) {
       updateText = 'week 36: baby is as big as a small pomenarian!'
       break
     case 37:
-      updateText = 'week 37: baby is as big as a honeydew melon!'
+      updateText = 'week 37: baby is as big as a beach ball!'
       break
     case 38:
       updateText = 'week 38: baby is as big as a ukelele!'
       break
     case 39:
-      updateText = 'week 39: baby is as big as a beach ball!'
+      updateText = 'week 39: baby is as big as a mini skateboard!'
       break
     case 40:
-      updateText = 'week 40: baby is as big as a pikachu!'
+      updateText = 'week 40: baby is as big as a watermelon!'
       break
   }
 
