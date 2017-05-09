@@ -95,6 +95,14 @@ form {
   left: 0;
 }
 
+.remove-baby-message {
+  position: absolute;
+  float: right;
+  font-size: 14px;
+  top: 40px;
+  left: 10;
+}
+
 #change-password {
   padding-top: 5px;
   padding-left: 100px;

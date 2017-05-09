@@ -16,7 +16,7 @@ const onCreateBaby = function (event) {
   const data = getFormFields(event.currentTarget)
   babyApi.createBaby(data)
     .then(babyUi.createBabySuccess)
-    .catch(babyUi.createBabyFailure)
+    .catch(babyUi.getBabyFailure)
 }
 
 const onUpdateBaby = function (event) {

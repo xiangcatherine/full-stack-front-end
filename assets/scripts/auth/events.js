@@ -35,7 +35,7 @@ const onSignOut = function (event) {
   event.preventDefault()
   api.signOut(data)
     .then(ui.signOutSuccess)
-    .catch(ui.signOutFailure)
+    .catch()
 }
 
 const addHandlers = () => {
