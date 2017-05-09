@@ -74,6 +74,9 @@ const deleteBabySuccess = () => {
   if (!$('.change-pwd-success').hasClass('hidden')) {
     $('.change-pwd-success').addClass('hidden')
   }
+  if (!$('.change-pwd-error').hasClass('hidden')) {
+    $('.change-pwd-error').addClass('hidden')
+  }
 }
 
 const deleteBabyFailure = (error) => {

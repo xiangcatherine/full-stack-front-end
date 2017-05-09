@@ -66,6 +66,9 @@ const addHandlers = () => {
     if (!$('.change-pwd-error').hasClass('hidden')) {
       $('.change-pwd-error').addClass('hidden')
     }
+    if (!$('.change-pwd-success').hasClass('hidden')) {
+      $('.change-pwd-success').addClass('hidden')
+    }
   })
   $('#log-out').on('click', function () {
     uxEvents.signUpAppear()
