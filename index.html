@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expecting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="assets/styles/index.scss">
+  <link href="https://fonts.googleapis.com/css?family=Mandali" rel="stylesheet">
+
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+
+<body id="container-fluid" class="faded">
+
+  <header>
+    <div class="title">
+      <h1>Expecting?</h1>
+      <p class="tagline ">Track the growth of your baby!</p>
+    </div>
+  </header>
+
+   <div class="sign-in-area">
+    <button id="register">register</button>
+    <button id="log-in">log in</button>
+
+    <form id="sign-up" class="hidden">
+        <fieldset>
+          <input type="text" name="credentials[email]" placeholder="email">
+          <input type="password" name="credentials[password]" placeholder="password">
+          <input type="password" name="credentials[password_confirmation]" placeholder="confirm password">
+          <button class="reset" type="submit" name="submit" value="sign up">sign up</button>
+        </fieldset>
+      </form>
+      <div class="sign-up-error-message"></div>
+
+    <form id="sign-in" class="hidden">
+        <fieldset>
+          <input type="text" name="credentials[email]" placeholder="email">
+          <input type="password" name="credentials[password]" placeholder="password">
+          <button class="reset" type="submit" name="submit" value="sign in">sign in</button>
+        </fieldset>
+      </form>
+
+    <div class="signInErrorMessage hidden"></div>
+  </div>
+
+  <div class="sign-out-area">
+    <button id="change-pwd" class="hidden change-pwd-button">change password</button>
+    <button type="submit" name="submit" value="sign out" class="sign-out-button hidden" id="sign-out">sign out</button>
+
+    <form id="change-password" class="hidden">
+      <fieldset>
+        <input type="password" name="passwords[old]" placeholder="old password">
+        <input type="password" name="passwords[new]" placeholder="new password">
+        <button type="submit" name="submit" value="change password">submit</button>
+      </fieldset>
+    </form>
+    <div class="change-pwd-success hidden"></div>
+    <div class="change-pwd-error hidden"></div>
+  </div>
+
+  <img src="https://raw.githubusercontent.com/xiangcatherine/full-stack-front-end/master/assets/images/baby2.png" class="pulse home-img" alt="baby"/>
+
+  <div class="baby-size-display hidden">
+    <img src="http://res.cloudinary.com/xiangcatherine/image/upload/v1494271946/projecttwo/transparent.png" class="baby-size-img">
+  </div>
+
+  <div class="input-age-area hidden">
+    <form id="input-age">
+      I am <input class="age-box" style="display:inline" type="number" name="baby[age]" min="4" max="40"> weeks pregnant.
+      <br><br>
+      <button style="opacity:0.8" type="submit" value="submit">submit</button>
+    </form>
+  </div>
+
+  <div class="view-baby-stat hidden">
+    <button class="baby-stat">View your baby's latest status!</button>
+    <div class="update-baby-error"></div>
+  </div>
+
+  <div class="baby-size-text hidden"></div>
+
+  <button class="remove-baby hidden">reset</button>
+  <div class="remove-baby-message"></div>
+</body>
+</html>
