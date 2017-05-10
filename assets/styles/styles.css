@@ -163,6 +163,7 @@ h1 {
 
 p,
 .signInErrorMessage,
+.sign-up-error-message
 .baby-size-text {
   font-family: 'Mandali', sans-serif;
   text-align: center;
@@ -177,9 +178,11 @@ p {
   font-size: 18px;
   padding-bottom: 40px;
   padding-top: 15px;
+  text-align: center;
 }
 
 .signInErrorMessage,
+.sign-up-error-message,
 .change-pwd-error,
 .change-pwd-success {
   font-size: 14px;

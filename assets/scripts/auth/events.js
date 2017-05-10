@@ -51,6 +51,9 @@ const addHandlers = () => {
     if ($('.signInErrorMessage').not('hidden')) {
       $('.signInErrorMessage').addClass('hidden')
     }
+    if ($('.sign-up-error-message').not('hidden')) {
+      $('.sign-up-error-message').addClass('hidden')
+    }
   })
   $('#log-in').on('click', function () {
     uxEvents.signInAppear()
@@ -59,6 +62,9 @@ const addHandlers = () => {
     }
     if ($('.signInErrorMessage').not('hidden')) {
       $('.signInErrorMessage').addClass('hidden')
+    }
+    if ($('.sign-up-error-message').not('hidden')) {
+      $('.sign-up-error-message').addClass('hidden')
     }
   })
   $('#change-pwd').on('click', function () {

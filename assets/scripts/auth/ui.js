@@ -7,6 +7,9 @@ const signUpSuccess = (data) => {
   $('#sign-up').addClass('hidden')
   $('#register').addClass('hidden')
   document.getElementById('sign-up').reset()
+  if (!$('.sign-up-error-message').hasClass('hidden')) {
+    $('.sign-up-error-message').addClass('hidden')
+  }
 }
 
 const signUpFailure = () => {
