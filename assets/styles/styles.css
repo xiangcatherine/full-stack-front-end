@@ -3,9 +3,19 @@
 }
 
 html,
-.container-fluid {
+#container-fluid {
   background: #dad7f0;
   font-family: 'Mandali', sans-serif;
+}
+
+body {
+  opacity: 1;
+  transition: .4s opacity ease-in;
+}
+
+.faded {
+  opacity: 0;
+  transition: none;
 }
 
 header {
@@ -80,6 +90,13 @@ header {
   opacity: 0.5;
 }
 
+.update-baby-error {
+  margin: auto;
+  padding-top: 140px;
+  font-size: 16px;
+  text-align: center;
+}
+
 form {
   font-family: 'Mandali', sans-serif;
   margin: 15px;
@@ -136,6 +153,10 @@ button:focus {
   outline:0;
 }
 
+button[type=submit] {
+  margin-top: 10px;
+}
+
 h1 {
   font-size: 70px;
 }
@@ -168,7 +189,7 @@ p {
 
 .home-img {
   display: block;
-  width: 51%;
+  width: 45%;
   margin: auto;
   height: auto;
 }
@@ -178,24 +199,23 @@ p {
 }
 .baby-size-img {
   padding-top: 35px;
-  width: 33%;
+  width: 35%;
   display: none;
   margin: auto;
-  height: auto;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 750px) {
   .home-img {
     width: 90%;
   }
 }
 @media only screen and (max-width: 750px) {
   .baby-size-img {
-    width: 60%;
+    width: 65%;
   }
 }
 @media only screen and (min-width: 1175px) {
   .home-img {
-    width: 40%;
+    width: 45%;
   }
 }
 

@@ -9,7 +9,7 @@ const signUpSuccess = (data) => {
   document.getElementById('sign-up').reset()
 }
 
-const signUpFailure = (error) => {
+const signUpFailure = () => {
   $('#sign-up').addClass('hidden')
   $('.sign-up-error-message').removeClass('hidden')
   $('.sign-up-error-message').text('Sorry, try again.')
@@ -28,7 +28,7 @@ const signInSuccess = (data) => {
   babyEvents.onGetBaby(event)
 }
 
-const signInFailure = (error) => {
+const signInFailure = () => {
   $('#sign-in').addClass('hidden')
   $('.signInErrorMessage').removeClass('hidden')
   document.getElementById('sign-in').reset()
@@ -41,7 +41,7 @@ const changePasswordSuccess = (data) => {
   document.getElementById('change-password').reset()
 }
 
-const changePasswordFailure = (error) => {
+const changePasswordFailure = () => {
   $('#change-password').addClass('hidden')
   $('.change-pwd-error').removeClass('hidden').text('Sorry, try again.')
   document.getElementById('change-password').reset()

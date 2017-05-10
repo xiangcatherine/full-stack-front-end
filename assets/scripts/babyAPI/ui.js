@@ -17,12 +17,7 @@ const createBabySuccess = (response) => {
   babyDisplay.getBabySizeText(response)
 }
 
-const createBabyFailure = (error) => {
-  console.error(error)
-}
-
 const getBabySuccess = (response) => {
-  console.log(response)
   if (response === null) {
     $('.input-age-area').removeClass('hidden')
   } else {
@@ -34,14 +29,7 @@ const getBabySuccess = (response) => {
   }
 }
 
-const getBabyFailure = (error) => {
-  console.error(error)
-  console.log('No get baby')
-}
-
 const updateBabySuccess = (response) => {
-  console.log(response)
-  console.log('Updated baby successfully!')
   $('.view-baby-stat').addClass('hidden')
   if ($('.baby-size-display').hasClass('hidden')) {
     $('.baby-size-display').removeClass('hidden')
@@ -62,13 +50,11 @@ const updateBabySuccess = (response) => {
   babyDisplay.getBabySizeText(response)
 }
 
-const updateBabyFailure = (error) => {
-  console.log(error)
-  console.log('Failed to update baby')
+const updateBabyFailure = () => {
+  $('.update-baby-error').text("Sorry, we were unable to get you're baby's status. Please try again!")
 }
 
 const deleteBabySuccess = () => {
-  console.log('removed baby!')
   $('.baby-size-img').css('display', 'none')
   $('view-baby-stat').addClass('hidden')
   $('.input-age-area').removeClass('hidden')
@@ -94,9 +80,7 @@ const deleteBabyFailure = () => {
 
 module.exports = {
   getBabySuccess,
-  getBabyFailure,
   createBabySuccess,
-  createBabyFailure,
   updateBabySuccess,
   updateBabyFailure,
   deleteBabySuccess,

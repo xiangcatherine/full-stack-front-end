@@ -14,8 +14,6 @@ const getBaby = () => {
 }
 
 const createBaby = (data) => {
-  console.log(`createBaby(${JSON.stringify(data)})`)
-
   return $.ajax({
     url: config.apiOrigin + '/babies',
     method: 'POST',
